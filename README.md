@@ -1,8 +1,8 @@
-# Final Project (Replace with your project name)
+# All About Taiwan
 
 ## Description
 
-Please add a brief description of your final project here.
+A website that shows all of Taiwan's fun destinations with a quiz feature at the end!
 
 ## Project Documentation
 

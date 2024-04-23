@@ -1,16 +1,4 @@
 /*
-CSS controls the styling of the page.
-You can write a color in directly, or use variables.
-Try changing the color from blue to red in the
-primary color variable below.
-*/
-
-:root {
-	--color-primary: blue;
-	--color-secondary: #c00;
-}
-
-/*
 CSS doesn't allow variables to be used in media
 queries just yet, but you can use these values
 to help you out.
@@ -22,12 +10,82 @@ to help you out.
 	--size-xl: 1200px;
 */
 
-h1 {
-	color: var(--color-primary);
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f4f4f4;
+	margin: 0;
+	padding: 0;
+}
+
+/* nav bar code */
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+li {
+	float: left;
+	color: white;
+}
+
+a {
+	display: block;
+	padding: 14px;
+	text-decoration: none;
+}
+
+nav {
+	position: fixed;
+	top: 0px;
+}
+
+.nav li a:hover {
+	background-color: black;
+	/* Set your desired hover background color */
+	color: white;
+	/* Set your desired hover text color */
+
+}
+
+/* SVG Code */
+
+.cls-1,
+.cls-2 {
+	stroke-width: 1px;
+	fill: #068dc5;
+}
+
+.map {
+	width: 500px;
+}
+
+.map path {
+	fill: #068dc5;
+	transition: fill 0.2s;
+}
+
+.map path:hover {
+	fill: #fa723a;
+	cursor: pointer;
+}
+
+.popup {
+	padding: 10px;
+	border: 1px solid #000;
+	display: none;
+}
+
+.show {
+	display: block
 }
 
 /* This uses the same value as --size-xs. */
-@media screen and (width >= 320px) {
+@media screen and (width >=320px) {
 	.content-container {
 		margin: 0 auto;
 		max-width: 768px;
