@@ -1,6 +1,6 @@
 body {
 	font-family: Arial, sans-serif;
-	background-color: #f4f4f4;
+	background-color: #068DC5;
 	margin: 0;
 	padding: 0;
 }
@@ -72,8 +72,8 @@ h1 {
 	display: block;
 	margin: 20px auto;
 	padding: 10px 20px;
-	background-color: #007bff;
-	color: #fff;
+	background-color: #068DC5;
+	color: white;
 	border: none;
 	border-radius: 5px;
 	cursor: pointer;

@@ -12,9 +12,37 @@ to help you out.
 
 body {
 	font-family: Arial, sans-serif;
-	background-color: #f4f4f4;
+	background-color: #068dc5;
 	margin: 0;
 	padding: 0;
+}
+
+h1 {
+	text-align: center;
+	font-size: 3em;
+}
+
+h2 {
+	text-align: center;
+	font-size: 1.25em;
+}
+
+aside {
+	position: fixed;
+	font-size: 1.25em;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+	/* Center the aside vertically */
+	width: 350px;
+	/* Adjust width as needed */
+	background-color: #f9f9f9;
+	/* Example background color */
+	padding: 20px;
+	/* Example padding */
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	/* Example box shadow */
+	background-color: lightgray;
 }
 
 /* nav bar code */
@@ -57,7 +85,7 @@ nav {
 .cls-1,
 .cls-2 {
 	stroke-width: 1px;
-	fill: #068dc5;
+	fill: #06c53e;
 }
 
 .map {
@@ -65,12 +93,12 @@ nav {
 }
 
 .map path {
-	fill: #068dc5;
+	fill: #06c53e;
 	transition: fill 0.2s;
 }
 
 .map path:hover {
-	fill: #fa723a;
+	fill: #FFE882;
 	cursor: pointer;
 }
 
