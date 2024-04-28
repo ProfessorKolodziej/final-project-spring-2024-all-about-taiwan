@@ -1,0 +1,121 @@
+/*
+CSS doesn't allow variables to be used in media
+queries just yet, but you can use these values
+to help you out.
+
+	--size-xs: 320px;
+	--size-sm: 480px;
+	--size-md: 768px;
+	--size-lg: 1024px;
+	--size-xl: 1200px;
+*/
+
+body {
+	font-family: Arial, sans-serif;
+	background-color: #068dc5;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	text-align: center;
+	font-size: 3em;
+}
+
+h2 {
+	text-align: center;
+	font-size: 1.25em;
+}
+
+aside {
+	position: fixed;
+	font-size: 1.25em;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+	/* Center the aside vertically */
+	width: 350px;
+	/* Adjust width as needed */
+	background-color: #f9f9f9;
+	/* Example background color */
+	padding: 20px;
+	/* Example padding */
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	/* Example box shadow */
+	background-color: lightgray;
+}
+
+/* nav bar code */
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+li {
+	float: left;
+	color: white;
+}
+
+a {
+	display: block;
+	padding: 14px;
+	text-decoration: none;
+}
+
+nav {
+	position: fixed;
+	top: 0px;
+}
+
+.nav li a:hover {
+	background-color: black;
+	/* Set your desired hover background color */
+	color: white;
+	/* Set your desired hover text color */
+
+}
+
+/* SVG Code */
+
+.cls-1,
+.cls-2 {
+	stroke-width: 1px;
+	fill: #06c53e;
+}
+
+.map {
+	width: 500px;
+}
+
+.map path {
+	fill: #06c53e;
+	transition: fill 0.2s;
+}
+
+.map path:hover {
+	fill: #FFE882;
+	cursor: pointer;
+}
+
+.popup {
+	padding: 10px;
+	border: 1px solid #000;
+	display: none;
+}
+
+.show {
+	display: block
+}
+
+/* This uses the same value as --size-xs. */
+@media screen and (width >=320px) {
+	.content-container {
+		margin: 0 auto;
+		max-width: 768px;
+	}
+}
